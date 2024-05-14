@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "486261985216",
+    "firebase_url": "https://scompass-app-7556a-default-rtdb.firebaseio.com",
+    "project_id": "scompass-app-7556a",
+    "storage_bucket": "scompass-app-7556a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:486261985216:android:a085296c7f378c34ae4225",
+        "android_client_info": {
+          "package_name": "com.packages.scompass"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "486261985216-nl6pt5283cgig3nvdi848ldv2pg5rhep.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.packages.scompass",
+            "certificate_hash": "dc532aed5b76d53ee308ca55e03054bf9cb4697f"
+          }
+        },
+        {
+          "client_id": "486261985216-ovbqt5ut9loq8dme9mm5cvsqvqc76a4c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.packages.scompass",
+            "certificate_hash": "a49b4a7095be3726a3606a694fa5a20d6a485354"
+          }
+        },
+        {
+          "client_id": "486261985216-9dvupfp66kbgkh6296hiki6k69eq08j5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIVyuGPWzRP_Tjb61_dpS6H5tqOXLSWHM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "486261985216-9dvupfp66kbgkh6296hiki6k69eq08j5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

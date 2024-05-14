@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home_menu"
+        android:icon="@drawable/home_button"
+        android:title="Home"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/moments_menu"
+        android:icon="@drawable/compass_button"
+        android:title="Moments"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/upload_menu"
+        android:icon="@drawable/add_button"
+        android:title="Post"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/search_menu"
+        android:icon="@drawable/search_button"
+        android:title="Search"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/about_menu"
+        android:icon="@drawable/about"
+        android:title="About"
+        app:showAsAction="always" />
+
+</menu>
