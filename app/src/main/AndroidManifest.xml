@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.packages.scompass">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Scompass"
+        tools:overrideLibrary="com.google.firebase.auth"
+        tools:targetApi="31">
+
+        <!-- Main launcher activity -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Activities accessible from outside the app -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".informationform"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MomentsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:host="scompass.in" android:pathPrefix="/moments" android:scheme="http" />
+                <data android:host="scompass.in" android:pathPrefix="/moments" android:scheme="https" />
+            </intent-filter>
+        </activity>
+
+        <!-- Razorpay Receiver -->
+        <receiver
+            android:name="com.razorpay.RzpTokenReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Activities not accessible from outside the app -->
+        <activity
+            android:name=".Traveler_Patron"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChatScreen"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ViewPost"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyEvents"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Privacy_and_terms"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ViewerProfile"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChennaitoKodaikanal"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EmergencyActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChennaitoOoty"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChennaitoKollihills"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CoffeeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EmbassyActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HangoutsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HotelsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MapsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GoGreen"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NoConnectionActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Comment"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".Post"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".AboutUsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChennaiToYelagiriActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+    </application>
+</manifest>

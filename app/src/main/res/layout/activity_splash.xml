@@ -1,0 +1,24 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <ImageView
+        android:id="@+id/splash_logo"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:rotation="0"
+        android:layout_gravity="center"
+        android:src="@drawable/logosplasch" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="@string/app_name"
+        android:layout_gravity="bottom|center"
+        android:textColor="@color/green"
+        android:textColorHighlight="@color/green"
+        android:textSize="17sp" />
+</FrameLayout>

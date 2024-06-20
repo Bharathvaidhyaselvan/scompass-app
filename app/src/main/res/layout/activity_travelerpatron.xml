@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:padding="16dp"
+    tools:context=".Traveler_Patron">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Traveler’s Patron"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/bgwhite"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/subheading"
+        android:layout_width="0dp"
+        android:textColor="@color/bgwhite"
+        android:layout_height="wrap_content"
+        android:text="Unlock a World of Exclusive Travel Experiences as a Travel Patron."
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/heading"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:layout_marginTop="16dp"/>
+
+    <ImageView
+        android:id="@+id/centerImage"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:src="@drawable/patron"
+        app:layout_constraintTop_toBottomOf="@id/subheading"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/bodyText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/bgwhite"
+        android:text="In our initial phase of enhancing the travel community, we greatly appreciate your support to help maintain this platform."
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/centerImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:layout_marginTop="16dp"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bodyText">
+
+        <Button
+            android:id="@+id/button100"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/layoutborder"
+            android:textColor="@color/bgwhite"
+            android:onClick="onAmountButtonClick"
+            android:text="Rs. 100" />
+
+        <Button
+            android:id="@+id/button500"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/layoutborder"
+            android:textColor="@color/bgwhite"
+            android:onClick="onAmountButtonClick"
+            android:text="Rs. 500" />
+
+        <Button
+            android:id="@+id/button1000"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/layoutborder"
+            android:textColor="@color/bgwhite"
+            android:onClick="onAmountButtonClick"
+            android:text="Rs. 1000" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/customAmountLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal"
+        android:background="@drawable/layoutborder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout">
+
+        <TextView
+            android:id="@+id/rupeeSymbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹"
+            android:textSize="18sp"
+            android:textColor="@color/bgwhite"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/customAmount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Enter Custom Amount"
+            android:inputType="numberDecimal"
+            android:textColor="@color/bgwhite"
+            android:textColorHint="@color/bgwhite"
+            android:minHeight="48dp"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/payButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Pay"
+            android:textColor="@color/white"
+            android:background="@drawable/shapeebutton"
+            android:onClick="onPayButtonClick"
+            android:layout_marginStart="8dp"
+            tools:ignore="OnClick" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonGoBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:onClick="onGoBackButtonClick"
+        android:text="⬅ Go Back"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/customAmountLayout"
+        tools:ignore="HardcodedText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

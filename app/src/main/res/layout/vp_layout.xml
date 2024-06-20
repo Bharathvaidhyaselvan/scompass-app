@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="@color/lightblack"
+        android:id="@+id/joinchat"
+               >
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:id="@+id/bgimage"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black"
+                android:alpha="0.5"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="5"
+                    >
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_weight="1">
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            app:cardCornerRadius="5dp"
+                            android:layout_gravity="center"
+                            app:cardBackgroundColor="@color/lightblack"
+                            >
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                android:id="@+id/profileimage"
+                                />
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="2.5">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_weight="1"
+                            android:layout_gravity="center_vertical"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Loading..."
+                                android:id="@+id/name"
+                                android:textStyle="bold"
+                                android:textColor="@color/white"
+                                android:textSize="16sp"  />
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/add_button"
+                                android:id="@+id/createeventinstant"
+                                app:tint="@color/white"
+                                android:visibility="gone"
+                                android:layout_marginLeft="5dp"
+
+                                />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/countrywithdayandnight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left|center_vertical"
+                            android:layout_weight="1"
+                            android:gravity="center|left"
+                            android:text="Loading..."
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_weight="1.5">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:visibility="visible"
+                            app:cardBackgroundColor="@color/Blueeee"
+                            app:cardCornerRadius="5dp">
+
+                            <TextView
+                                android:id="@+id/joinnowbutton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="10dp"
+                                android:layout_marginVertical="5dp"
+                                android:gravity="center"
+                                android:text="Join Now"
+                                android:textColor="@color/white"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="bottom|center"
+                    android:text="Loading..."
+                    android:background="@color/black"
+                    android:textColor="@color/white"
+                    android:alpha="0.6"
+                    android:id="@+id/namewithvisitingdate"
+                    android:paddingVertical="5dp"
+                    android:textSize="12sp"  />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginBottom="20dp"
+                    >
+<!--                    <ScrollView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_weight="0.5"-->
+<!--                        >-->
+<!--                        <TextView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:gravity="center_vertical"-->
+<!--                            android:text="Loading..."-->
+<!--                            android:id="@+id/description"-->
+<!--                            android:textColor="@color/white"-->
+<!--                            android:textSize="11sp"  />-->
+<!--                    </ScrollView>-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                         android:id="@+id/description"
+                        android:layout_weight="0.5"
+                        android:text="Loading..."
+                        android:textColor="@color/white"
+                        android:textSize="11sp"  />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|top"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
+                        android:text="Members\n.."
+                        android:textColor="@color/green"
+                        android:id="@+id/membersjoined"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Created on: ..."
+                    android:id="@+id/createdon"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"  />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="View all joined events"
+                    android:id="@+id/viewallevents"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/green"
+                    android:textSize="14sp"  />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="5dp"
+                    android:gravity="center"
+                    android:id="@+id/startedcardvisiblity"
+                     android:alpha="0.7"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"
+                    android:layout_gravity="center"
+                    app:cardBackgroundColor="@color/green"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Started"
+                        android:layout_marginHorizontal="10dp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_marginVertical="5dp"
+                        android:textSize="11sp"  />
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/more_button"
+                android:padding="10dp"
+                android:id="@+id/morebutton"
+                android:layout_gravity="right|top"
+                android:layout_marginRight="20dp"
+                />
+
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
